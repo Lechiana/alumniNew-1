@@ -125,31 +125,31 @@
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><u>ข้อมูลการศึกษา</u></h2>
             <div class="flex">
               <p class="flex">รหัสนักศึกษา :&nbsp;</p>
-              <input type="text" name="studentID" value="<?= $user['aln_id'] ?>">
+              <input readonly type="text" name="studentID" value="<?= $user['aln_id'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ชื่อ-นามสกุล :&nbsp;</p>
-              <input type="text" name="name" value="<?php echo $user['firstName'] . " " . $user['lastName']; ?>">
+              <input readonly type="text" name="name" value="<?php echo $user['firstName'] . " " . $user['lastName']; ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ระดับการศึกษา :&nbsp;</p>
-              <input type="text" name="educationLevel" value="ปริญญาตรี">
+              <input readonly type="text" name="educationLevel" value="ปริญญาตรี">
             </div>
             <div class="flex mt-2">
               <p class="flex">ปีการศึกษาที่เข้า :&nbsp;</p>
-              <input type="text" name="startStudying" value="<?= $user['inYear'] ?>">
+              <input readonly type="text" name="startStudying" value="<?= $user['inYear'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ปีการศึกษาที่จบ :&nbsp;</p>
-              <input type="text" name="endStudying" value="<?= $user['outYear'] ?>">
+              <input readonly type="text" name="endStudying" value="<?= $user['outYear'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">สาขาวิชา :&nbsp;</p>
-              <input type="text" name="major" value="<?php echo $major[$user['major'] - 1]['major_name']; ?>">
+              <input readonly type="text" name="major" value="<?php echo $major[$user['major'] - 1]['major_name']; ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">คณะ :&nbsp;</p>
-              <input type="text" name="faculty" value="<?php echo $faculty[$user['faculty'] - 1]['fac_name']; ?>">
+              <input readonly type="text" name="faculty" value="<?php echo $faculty[$user['faculty'] - 1]['fac_name']; ?>">
             </div>
           </div>
         </div>
@@ -163,35 +163,35 @@
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><u>ข้อมูลการทำงาน</u></h2>
             <div class="flex">
               <p class="flex">สถานที่ทำงาน :&nbsp;</p>
-              <input type="text" name="workplace" value="<?= $working['place']?>">
+              <input readonly type="text" name="workplace" value="<?= $working['place']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">อาชีพ :&nbsp;</p>
-              <input type="text" name="occupation" value="<?= $working['job']?>">
+              <input readonly type="text" name="occupation" value="<?= $working['job']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ตำแหน่ง :&nbsp;</p>
-              <input type="text" name="position" value="<?= $working['position']?>">
+              <input readonly type="text" name="position" value="<?= $working['position']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ที่อยู่ :&nbsp;</p>
-              <input type="text" name="address" value="<?= $working['address']?>">
+              <input readonly type="text" name="address" value="<?= $working['address']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">อำเภอ :&nbsp;</p>
-              <input type="text" name="district" value="<?= $working['district']?>">
+              <input readonly type="text" name="district" value="<?= $working['district']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">จังหวัด :&nbsp;</p>
-              <input type="text" name="province" value="<?= $working['province']?>">
+              <input readonly type="text" name="province" value="<?= $working['province']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">รหัสไปรษณีย์ :&nbsp;</p>
-              <input type="text" name="postcode" value="<?= $working['zipcode']?>">
+              <input readonly type="text" name="postcode" value="<?= $working['zipcode']?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">เบอร์โทร :&nbsp;</p>
-              <input type="text" name="telephone" value="<?= $working['tel']?>">
+              <input readonly type="text" name="telephone" value="<?= $working['tel']?>">
             </div>
           </div>
         </div>
@@ -207,19 +207,19 @@
             <h2 class="text-gray-900 text-lg title-font font-medium mb-3"><u>ช่องทางการติดต่อ</u></h2>
             <div class="flex">
               <p class="flex">Facebook :&nbsp;</p>
-              <input type="text" name="facebook" value="<?= $user['facebook'] ?>">
+              <input readonly type="text" name="facebook" value="<?= $user['facebook'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">ID Line :&nbsp;</p>
-              <input type="text" name="idLine" value="<?= $user['line'] ?>">
+              <input readonly type="text" name="idLine" value="<?= $user['line'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">Tel :&nbsp;</p>
-              <input type="text" name="twitter" value="<?= $working['tel'] ?>">
+              <input readonly type="text" name="twitter" value="<?= $working['tel'] ?>">
             </div>
             <div class="flex mt-2">
               <p class="flex">Email :&nbsp;</p>
-              <input type="text" name="email" value="<?= $user['email'] ?>">
+              <input readonly type="text" name="email" value="<?= $user['email'] ?>">
             </div>
           </div>
         </div>
